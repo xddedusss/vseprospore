@@ -1,1 +1,121 @@
 
+@import url("https://fonts.googleapis.com/css2?family=Code+Mono&display=swap");
+
+html {
+  background-image: url(https://i.redd.it/7dg9x00x1zr91.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: linear-gradient(90deg, #1a1a2e, #162447);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: 'Code Mono', monospace;
+  font-size: 28px;
+  color: #f5f5f5;
+  text-shadow: 0 0 10px #ffcc00;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-family: 'Code Mono', monospace;  
+  font-size: 18px;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ffcc00;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+header, footer {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  text-align: center;
+  
+}
+
+main {
+  max-width: 1300px;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Code Mono', monospace;
+  border: 2px solid #ffffff;
+  backdrop-filter: blur(10px);
+  color: #f1f1f1;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: justify;
+  animation: fadeIn 1s ease-in;
+}
+
+body {
+  font-family: "Pixelify Sans", sans-serif;
+  color: #f1f1f1;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;  
+}
+p {
+  border: rgb(41, 41, 41) 1px solid;
+  margin: 10px;
+  padding: 20px;
+  text-align: center ;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+} 
+.glav {
+  text-align: center;
+}
+.logog {
+  border-radius: 60px;
+  
+}
+.infa {
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: rgb(41, 41, 41) 1px solid;
+  border-radius: 5px;
+}
