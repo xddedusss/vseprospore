@@ -88,6 +88,9 @@ main {
   font-size: 18px;
   text-align: justify;
   margin-bottom: 80px;
+    position: relative;
+  z-index: 1;
+  animation: shine 3s infinite;
 }
 
 body {
@@ -150,4 +153,23 @@ h4 {
 }
 .redaktor {
   text-align: left;
+}
+
+@keyframes shine {
+  0% { box-shadow: 0 0 5px rgba(255,255,255,0.2); }
+  50% { box-shadow: 0 0 30px rgba(255,255,255,0.8); }
+  100% { box-shadow: 0 0 5px rgba(255,255,255,0.2); }
+}
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  text-align: center;
+  padding: 20px 15px;
+  border-top: 2px solid #003b59;
+  border-radius: 100px;
+}
+
+.footer-content {
+  font-size: 17px;
+  letter-spacing: 1px;;
 }
