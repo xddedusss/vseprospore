@@ -6,4 +6,4 @@ document.querySelectorAll(".scroll_button").forEach((item, index) => {
       inline: "nearest",
     });
   });
-});
+}); у
